@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "NY Times via AADL",
+    "version": "1.0",
+
+    "description": "Redirect links to the NY Times through the Ann Arbor District Library.",
+
+    "icons": {
+      "48": "icons/nytimes-aadl-48.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://www.nytimes.com/*"],
+        "js": ["redirect.js"]
+      }
+    ]
+  
+  }
